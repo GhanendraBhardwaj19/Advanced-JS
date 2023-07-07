@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class emp {
+        constructor(n) {
+          this.name = n;
+        }
+        sayHi() {
+          console.log("Hi..");
+        }
+      }
+
+      class manager extends emp {
+        constructor(p, d) {
+          super(p);
+          //   super keyword is used to access the parent's class methods and properties
+          this.department = d;
+        }
+        info() {
+          super.sayHi();
+          console.log("info..");
+        }
+      }
+      let mngr = new manager("Ghanendra", "Web Development");
+      console.log(mngr);
+      console.log(mngr.info());
+    </script>
+  </body>
+</html>

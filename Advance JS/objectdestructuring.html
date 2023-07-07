@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let book = {
+        name: "Advance JS",
+        price: 150,
+        pages: 200,
+        publication: {
+          pub_name: "Ghanendra",
+          year: 2023,
+        },
+      };
+
+      //   let name = book.name;
+      //   console.log(name);
+
+      //   let { name, price, pages } = book;
+      //   console.log(name);
+
+      //   we can change the name by adding :
+
+      //   let { name: title, price, pages } = book;
+      //   console.log(title);
+
+      let {
+        name,
+        price,
+        pages,
+        publication: { pub_name: pub, year },
+      } = book;
+      console.log(pub);
+    </script>
+  </body>
+</html>

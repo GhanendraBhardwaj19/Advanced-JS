@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // in simple string we use \n to show the element in next line but  templet literal can resolve it by using backtec
+      // let str = "hello \n world";
+      let str = `hello
+world        `;
+      console.log(str);
+
+      //   the second problem that templet literal resolved it that we don't have to concate the string again and again
+      // let name = "Ghanendra";
+      // console.log("My name is "+ name +".");
+
+      let name = "Ghanendra";
+      console.log(`My name is ${name}.`);
+    </script>
+  </body>
+</html>

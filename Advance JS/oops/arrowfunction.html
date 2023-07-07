@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // normal function
+      function sum(a, b) {
+        return a + b;
+      }
+      console.log(sum(2, 3));
+      // arrow function
+      let sumA = (a, b) => {
+        return a + b;
+      };
+      console.log(sumA(2, 3));
+
+      //   when we don't have more than two parameters then we can remove curly braces and paranthesis and we don't need to write return
+
+      let sumB = (a) => 2 * a;
+      console.log(sumB(2));
+    </script>
+  </body>
+</html>

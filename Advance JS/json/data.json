@@ -1,0 +1,11 @@
+{
+  "name": "Ghanendra",
+  "age": 21,
+  "is_student": true,
+  "p_lang": ["c", "c++", "java", "c#"],
+  "addres": {
+    "city": "Delhi",
+    "state": "New Delhi",
+    "pincode": 101010
+  }
+}

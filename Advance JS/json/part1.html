@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let data = `{
+    "name":"Ghanendra",
+    "age":21,
+    "is_student":true,
+    "p_lang":["c","c++","java","c#"],
+    "address":{
+        "city":"Delhi",
+        "state":"New Delhi",
+        "pincode":101010
+    }
+}`;
+
+      let dObject = JSON.parse(data);
+      console.log(dObject["name"]);
+      console.log(dObject["p_lang"][1]);
+      console.log(dObject["address"]["city"]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //     First type of object declaration
+      //   let person1 = {
+      //     firstName: "Ghanendra",
+      //     lastName: "Bhardwaj",
+      //     age: 20,
+      //     fullName: function () {
+      //       console.log(this.firstName + " " + this.lastName);
+      //     },
+      //   };
+      //   person1.age = 21;
+      //   console.log(person1.age);
+      //   person1.fullName();
+
+      // Second type of object declaration
+      //   let person1 = {};
+      //   person1.age = 21;
+      //   person1.fullName = function () {
+      //     console.log("This is full name.");
+      //   };
+      //   console.log(person1.age);
+      //   person1.fullName();
+
+      // Third type of object declaration
+      //   let person1 = new Object();
+      //   person1.age = 21;
+      //   person1.fullName = function () {
+      //     console.log("This is full name.");
+      //   };
+      //   console.log(person1.age);
+      //   person1.fullName();
+
+      // Fourth type of object declaration by using CONSTRUCTOR
+
+      function Person(first, last, a) {
+        this.firstName = first;
+        this.lastName = last;
+        (this.age = a),
+          (this.sayHi = function () {
+            console.log("Hii, " + this.firstName);
+          });
+      }
+
+      person1 = new Person("Ghanendra", "Bhardwaj", 21);
+      person2 = new Person("Pratap", "Bhardwaj", 20);
+      console.log(person1.age);
+      person1.sayHi();
+      console.log(person2.age);
+    </script>
+  </body>
+</html>
